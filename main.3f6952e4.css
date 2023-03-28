@@ -18,7 +18,4 @@
 #site-border-left, #site-border-right, #site-border-bottom, #site-border-top {
   display: none !important;
 }
-body {
-  background-color: #000 !important;
-}
 }
