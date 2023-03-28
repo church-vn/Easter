@@ -19,3 +19,6 @@
   display: none !important;
 }
 }
+body#home_body {
+background-color: #000 !important;  
+}
