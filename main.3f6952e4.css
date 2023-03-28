@@ -14,11 +14,11 @@
 
 
 /* main_style */
-/* @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 #site-border-left, #site-border-right, #site-border-bottom, #site-border-top {
-  display: none !important;
+  filter: opacity(0) !important;
 }
-} */
+}
 body#home_body {
 background-color: #000 !important;
 }
