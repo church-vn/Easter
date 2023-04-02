@@ -38,7 +38,7 @@
 	// get all options radio
 	const getAllOptions = () => document.querySelectorAll("input[name=jsq_option]");
 
-	// after selected option disable radio 
+	// after selected option disable radio
 	const disableOptions = () => {
 		let option_radios = getAllOptions();
 		option_radios.forEach(element => {
@@ -61,7 +61,7 @@
 				element.nextElementSibling.classList.add("jsq-correct");
 			}
 
-			// user selected incorrect answer [color red]. 
+			// user selected incorrect answer [color red].
 			if (element.checked && element.value != answer) {
 				element.nextElementSibling.classList.add("jsq-incorrect", "jsq_shake");
 
@@ -135,15 +135,15 @@
 			code_box.style.display = 'block';
 			pre_code.innerText = current_question.code;
 		}
-		// highlight code 
+		// highlight code
 		pre_code.innerHTML = Prism.highlight(pre_code.innerText, Prism.languages.javascript, 'javascript');
 	};
 	// question completed show result
 	const completedQuiz = () => {
 		let div = '<div class="jsq_finish_box">';
-		div += '<div class="jsq_finish">You have completed the Quiz!</div>';
+		div += '<div class="jsq_finish">Ты прошел тест!</div>';
 		div += '<br>';
-		div += '<div class="jsq_score">Your score: <b>' + score + ' out of ' + questions.length + '</b> <b>' + Math.round((100 * score) / questions.length) + '%</b></div>';
+		div += '<div class="jsq_score">Правильных ответов: <b>' + score + ' из ' + questions.length + '</b> <b>' + Math.round((100 * score) / questions.length) + '%</b></div>';
 		div += '</div>';
 		document.getElementById("jsq_box").innerHTML = div;
 	};

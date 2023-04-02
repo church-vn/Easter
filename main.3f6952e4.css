@@ -35,3 +35,18 @@ div.block_map {
 div.block_map:hover {
   filter: none;
 }
+div#button_about_easter button {
+  background: white !important;
+  color: black;
+  border: 1px solid #000;
+  width: 200px;
+}
+div#button_about_easter {
+  margin: 0 auto !important;
+  width: 250px !important;
+  margin-top: 30px !important;
+}
+div#button_about_easter button:hover {
+  background: #000 !important;
+  color: white;
+}
