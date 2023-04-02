@@ -22,3 +22,7 @@
 body#home_body {
 background-color: #000 !important;
 }
+
+body p {
+  font-size: 13px !important;
+}
