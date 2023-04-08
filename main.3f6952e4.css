@@ -43,10 +43,18 @@ div#button_about_easter button {
 }
 div#button_about_easter {
   margin: 0 auto !important;
-  width: 250px !important;
   margin-top: 30px !important;
+  text-align: center;
+}
+div#button_about_easter button {
 }
 div#button_about_easter button:hover {
   background: #000 !important;
   color: white;
+}
+
+@media screen and (max-width: 430px) {
+  div#button_about_easter button {
+    margin-top: 15px;
+  }
 }
